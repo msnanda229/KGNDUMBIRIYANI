@@ -1,0 +1,180 @@
+/* MAIN MENU SECTION */
+
+.menu{
+  width: 94.01%;
+  background:#0b0705;
+  padding:100px 60px;
+  color:white;
+}
+
+@media (max-width: 768px){
+  .menu{
+    padding:80px 16px;
+  }
+
+  .menu-header h1{
+    font-size:36px;
+  }
+
+  .menu-header p{
+    font-size:16px;
+  }
+
+  .category-title{
+    font-size:22px;
+  }
+
+  .card{
+    min-width:260px;
+  }
+
+  .menu-arrow{
+    width:34px;
+    height:34px;
+    font-size:18px;
+  }
+
+  .menu-arrow.prev{
+    left:-10px;
+  }
+
+  .menu-arrow.next{
+    right:-10px;
+  }
+}
+
+/* HEADER */
+
+.menu-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.menu-header p{
+  color:#e4b64a;
+  font-style:italic;
+  font-size:18px;
+}
+
+.menu-header h1{
+  font-size:55px;
+  color:#e4b64a;
+  margin-top:10px;
+}
+
+/* CATEGORY TITLE */
+
+.category-title{
+  color:#e4b64a;
+  font-size:28px;
+  margin-bottom:25px;
+}
+
+/* CAROUSEL */
+
+.menu-carousel{
+  position:relative;
+  margin-bottom:70px;
+}
+
+/* HORIZONTAL SCROLL CONTAINER */
+
+.menu-container{
+  display:flex;
+  gap:25px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  padding-bottom:10px;
+}
+
+.menu-container::-webkit-scrollbar{
+  display:none;
+}
+
+/* MENU CARD */
+
+.card{
+  min-width:300px;
+  background:#1b140f;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+  border:0.1px thin #e4b64a;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border: 1px solid #e4b64a;
+}
+
+/* IMAGE */
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+/* CARD CONTENT */
+
+.card-content{
+  padding:20px;
+}
+
+.card-content h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  font-size:14px;
+  color:#b9b9b9;
+  margin-bottom:15px;
+  line-height:1.5;
+}
+
+/* PRICE */
+
+.price{
+  color:#e4b64a;
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* CURRY GRID */
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+/* SCROLL ARROWS */
+
+.menu-arrow{
+  position:absolute;
+  top:40%;
+  transform:translateY(-50%);
+  background:#e4b64a;
+  border:none;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  color:black;
+  z-index:10;
+}
+
+.menu-arrow.prev{
+  left:-20px;
+}
+
+.menu-arrow.next{
+  right:-20px;
+}
+
+.menu-arrow:hover{
+  background:#d4a53d;
+}

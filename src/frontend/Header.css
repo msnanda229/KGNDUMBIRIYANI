@@ -1,0 +1,162 @@
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+  color: #d4af37;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scroll effect */
+
+.header.scrolled{
+  background:#0b0705;
+  box-shadow:0 4px 15px rgba(0,0,0,0.6);
+}
+
+/* Logo */
+
+.logo-section{
+  margin-left:100px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo{
+  width:40px;
+  height:40px;
+}
+
+.brand{
+  font-size:24px;
+  font-weight:bold;
+  color:#d4af37;
+}
+
+/* Navigation */
+
+.nav{
+  display:flex;
+  gap:40px;
+  margin-right:100px;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#c0b6a6;
+  font-size:16px;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  color:#d4af37;
+}
+
+/* Hamburger */
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  justify-content:space-between;
+  width:24px;
+  height:18px;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  display:block;
+  height:3px;
+  background:#d4af37;
+  border-radius:2px;
+  transition:0.3s;
+}
+
+.menu-toggle.open span:nth-child(1){
+  transform:translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2){
+  opacity:0;
+}
+
+.menu-toggle.open span:nth-child(3){
+  transform:translateY(-7px) rotate(-45deg);
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.header{
+padding:0 24px;
+}
+
+.logo-section{
+margin-left:40px;
+}
+
+.nav{
+gap:24px;
+margin-right:40px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.header{
+height:auto;
+padding:10px 16px;
+}
+
+.logo-section{
+margin-left:0;
+}
+
+.menu-toggle{
+display:flex;
+}
+
+.nav{
+position:absolute;
+top:70px;
+left:0;
+right:0;
+background:#1a0e06;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding:20px 0;
+margin:0;
+display:none;
+}
+
+.nav.open{
+display:flex;
+}
+
+.nav a{
+font-size:15px;
+}
+
+}
+
+/* Anchor offset for sections */
+section{
+  scroll-margin-top:80px;
+}
