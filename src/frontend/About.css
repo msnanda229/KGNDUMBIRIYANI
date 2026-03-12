@@ -1,8 +1,8 @@
 .about{
-  width: 94%;
+  width: 100%;
   background:#26211f;
   color:white;
-  padding:100px 60px;
+  padding:100px 5%;
   text-align:center;
 }
 
@@ -92,7 +92,7 @@
   }
 
   .about-header h1{
-    font-size:36px;
+    font-size:32px;
   }
 
   .about-header p{

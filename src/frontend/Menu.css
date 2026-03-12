@@ -1,9 +1,9 @@
 /* MAIN MENU SECTION */
 
 .menu{
-  width: 94.01%;
+  width: 100%;
   background:#0b0705;
-  padding:100px 60px;
+  padding:100px 5%;
   color:white;
 }
 
@@ -13,7 +13,8 @@
   }
 
   .menu-header h1{
-    font-size:36px;
+    font-size:32px;
+    margin-top: 5px;
   }
 
   .menu-header p{
@@ -25,7 +26,8 @@
   }
 
   .card{
-    min-width:260px;
+    min-width:280px;
+    flex: 0 0 280px;
   }
 
   .menu-arrow{
@@ -131,6 +133,12 @@
   color:#b9b9b9;
   margin-bottom:15px;
   line-height:1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 65px;
 }
 
 /* PRICE */
