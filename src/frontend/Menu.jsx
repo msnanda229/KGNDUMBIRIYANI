@@ -66,7 +66,7 @@ function Menu() {
     {
       name: "Chicken Joint Biryani",
       price: "₹180",
-      img: "https://authenticroyal.com/wp-content/uploads/2024/10/royal-rice-may-220461.jpg",
+      img: "https://b.zmtcdn.com/data/dish_photos/5b6/f406e276121230cd29a61ea1de8395b6.jpeg",
       desc: "Juicy chicken joints cooked with aromatic biryani spices."
     },
     {
